@@ -3,7 +3,7 @@ import React from 'react'
 const Dev = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-lg max-w-none prose-stone dark:prose-invert text-base-content">
         <h1>Dev:</h1>
 
         <a href='https://github.com/KD-Long/memo'>github.com/KD-Long/memo</a>
@@ -25,7 +25,7 @@ const Dev = () => {
 
         <h2>User Flow</h2>
 
-        <pre className="bg-base-200 p-4 rounded-lg overflow-x-auto text-sm font-mono whitespace-pre"><code>{
+        <pre className="bg-base-200 p-4 rounded-lg overflow-x-auto text-sm font-mono whitespace-pre text-base-content"><code className="text-base-content">{
           `
           ┌─────────────────────────────┐     ┌─────────────────────────────┐     ┌─────────────────────────────┐
           │  1. User Inputs markdown    │     │  2. Raw Data Saved          │     │  3. Hidden Set represents   │
@@ -98,7 +98,7 @@ const Dev = () => {
         <p>
           String replacement would break markdown syntax. For example:
         </p>
-        <pre className="bg-base-200 p-4 rounded-lg overflow-x-auto"><code>{`**bold** → if "bold" is hidden → **▰▰▰▰** (breaks formatting!)`}</code></pre>
+        <pre className="bg-base-200 p-4 rounded-lg overflow-x-auto text-base-content"><code className="text-base-content">{`**bold** → if "bold" is hidden → **▰▰▰▰** (breaks formatting!)`}</code></pre>
         <p>
           AST manipulation only modifies text nodes, preserving all markdown structure.
         </p>

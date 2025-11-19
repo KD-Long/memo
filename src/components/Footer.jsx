@@ -24,7 +24,7 @@ export default function Footer() {
 
 
                 <div className="flex justify-center items-center">
-                    <p>Copyright © 2025 - All right reserved by <a href="https://kyledlong.com">kyledlong.com</a></p>
+                    <p>Copyright © 2025 <a href="https://kyledlong.com">kyledlong.com</a></p>
                 </div>
             </div>
         </footer>
